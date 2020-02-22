@@ -14,6 +14,7 @@ done
 Change replace user_list.txt with a user/password list in the following format:
 
 jdoe password123
+
 bsmith password456
 
 Spaces or tabs work as separators for the list. Once list is complete, run the following command:
@@ -25,6 +26,7 @@ done < user_list.txt
 
 ## Show Arguments for a Running Process
 Replace `PID` with the PID of the desired process (e.g., a PID you got from netstat)
+
 `ps -p PID -o args`
 
 Argument Explanation:
@@ -33,14 +35,18 @@ Argument Explanation:
 
 ## Show Files in Use by a Process
 Replace `PID` with the PID of the desired process (e.g., a PID you got from netstat)
+
 `lsof -p PID`
 
 ## Archive a Directory
 It is a good idea to archive data directories for services before altering them. For example:
+
 HTTP data: `/var/www`
+
 MySQL data: `/var/lib/mysql`
 
 Replace backup with the name of archive you would like to create. Replace directory with the path of the directory you would like to back up. I recommend you be in the same working directory prior to running this command, as tar preserves paths.
+
 `tar -cvzf backup.tar.gz directory`
 
 Argument Explanation:
@@ -56,6 +62,7 @@ It is possible we may be given machines with a weak default password encryption 
 `chpasswd -h`
 
 The encryption methods available and in use are also stored in:
+
 `/etc/login.defs`
 
 `grep -r '^password.*pam_unix.so' /etc/pam.d`
@@ -63,9 +70,11 @@ The encryption methods available and in use are also stored in:
 ## Auditd Configuration
 ### Install auditd
 RHEL-based:
+
 `yum -y install audit`
 
 Debian-based:
+
 `apt-get install auditd audispd-plugins`
 
 ### Configuring a Ruleset
