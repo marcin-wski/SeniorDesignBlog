@@ -4,10 +4,10 @@ When setting up a new Linux server one cannot forget about the security portion 
 
 # General Tips
 ## Find all users with a shell
-`grep -vE '^#|^$| false|nologin' /etc/shells |
+```grep -vE '^#|^$| false|nologin' /etc/shells |
 while read shell; do
 grep -E ":${shell}\$" /etc/passwd
-done`
+done```
 
 ## Change passwords for a list of users
 Change replace user_list.txt with a user/password list in the following format:
@@ -17,9 +17,9 @@ bsmith password456
 
 Spaces or tabs work as separators for the list. Once list is complete, run the following command:
 
-`while read user pass; do
+```while read user pass; do
 echo ${user}:${pass} | chpasswd
-done < user_list.txt`
+done < user_list.txt```
 
 ## Show Arguments for a Running Process
 Replace `PID` with the PID of the desired process (e.g., a PID you got from netstat)
@@ -67,7 +67,7 @@ Debian-based:
 
 ### Configuring a Ruleset
 Add the following rules to /etc/audit/rules.d/audit.rules
-`## Buffer Size
+```## Buffer Size
 ## Feel free to increase this if the machine panic's
 -b 8192
  
@@ -100,16 +100,16 @@ Add the following rules to /etc/audit/rules.d/audit.rules
 -w /bin/su -p x -k priv_esc
 -w /usr/bin/sudo -p x -k priv_esc
 -w /etc/sudoers -p rw -k priv
--w /etc/crontab -p wa -k cron`
+-w /etc/crontab -p wa -k cron```
 
 Note: In order to log all remote commands the `audit=1` parameter needs to be added to `/etc/default/grub` and the server needs to be rebooted.
 
 ### Send Audit Logs to Syslog
 Edit the `/etc/audisp/plugins.d/syslog.conf` file and change `active=no` to `active = yes`.
 
-`active = yes
+```active = yes
 direction = out
 path = builtin_syslog
 type = builtin
 args = LOG_INFO
-format = string`
+format = string```
