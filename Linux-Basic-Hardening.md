@@ -4,7 +4,8 @@ When setting up a new Linux server one cannot forget about the security portion 
 
 # General Tips
 ## Find all users with a shell
-```grep -vE '^#|^$| false|nologin' /etc/shells |
+```
+grep -vE '^#|^$| false|nologin' /etc/shells |
 while read shell; do
 grep -E ":${shell}\$" /etc/passwd
 done
@@ -19,7 +20,8 @@ bsmith password456
 
 Spaces or tabs work as separators for the list. Once list is complete, run the following command:
 
-```while read user pass; do
+```
+while read user pass; do
 echo ${user}:${pass} | chpasswd
 done < user_list.txt
 ```
@@ -79,7 +81,8 @@ Debian-based:
 
 ### Configuring a Ruleset
 Add the following rules to /etc/audit/rules.d/audit.rules
-```## Buffer Size
+```
+## Buffer Size
 ## Feel free to increase this if the machine panic's
 -b 8192
  
@@ -120,7 +123,8 @@ Note: In order to log all remote commands the `audit=1` parameter needs to be ad
 ### Send Audit Logs to Syslog
 Edit the `/etc/audisp/plugins.d/syslog.conf` file and change `active=no` to `active = yes`.
 
-```active = yes
+```
+active = yes
 direction = out
 path = builtin_syslog
 type = builtin
