@@ -64,6 +64,7 @@ The encryption methods available and in use are also stored in:
 ### Install auditd
 RHEL-based:
 `yum -y install audit`
+
 Debian-based:
 `apt-get install auditd audispd-plugins`
 
