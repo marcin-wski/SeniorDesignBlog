@@ -7,7 +7,8 @@ When setting up a new Linux server one cannot forget about the security portion 
 ```grep -vE '^#|^$| false|nologin' /etc/shells |
 while read shell; do
 grep -E ":${shell}\$" /etc/passwd
-done```
+done
+```
 
 ## Change passwords for a list of users
 Change replace user_list.txt with a user/password list in the following format:
@@ -19,7 +20,8 @@ Spaces or tabs work as separators for the list. Once list is complete, run the f
 
 ```while read user pass; do
 echo ${user}:${pass} | chpasswd
-done < user_list.txt```
+done < user_list.txt
+```
 
 ## Show Arguments for a Running Process
 Replace `PID` with the PID of the desired process (e.g., a PID you got from netstat)
@@ -100,7 +102,8 @@ Add the following rules to /etc/audit/rules.d/audit.rules
 -w /bin/su -p x -k priv_esc
 -w /usr/bin/sudo -p x -k priv_esc
 -w /etc/sudoers -p rw -k priv
--w /etc/crontab -p wa -k cron```
+-w /etc/crontab -p wa -k cron
+```
 
 Note: In order to log all remote commands the `audit=1` parameter needs to be added to `/etc/default/grub` and the server needs to be rebooted.
 
@@ -112,4 +115,5 @@ direction = out
 path = builtin_syslog
 type = builtin
 args = LOG_INFO
-format = string```
+format = string
+```
