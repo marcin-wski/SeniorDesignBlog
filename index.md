@@ -4,4 +4,5 @@
 1. [Discovering Suicide Linux](https://marcin-wski.github.io/SeniorDesignBlog/Discovering-Suicide-Linux)
 2. [Configure Use and Harden PAM](https://marcin-wski.github.io/SeniorDesignBlog/Configure-Use-and-Harden-PAM)
 3. [Linux Basic Hardening](https://marcin-wski.github.io/SeniorDesignBlog/Linux-Basic-Hardening)
-4. [Beginning with PGP Encryption](https://marcin-wski.github.io/SeniorDesignBlog/Beginning-with-PGP-Encryption)
+4. (missing)
+5. [Beginning with PGP Encryption](https://marcin-wski.github.io/SeniorDesignBlog/Beginning-with-PGP-Encryption)
