@@ -7,3 +7,4 @@
 4. (missing)
 5. [Beginning with PGP Encryption](https://marcin-wski.github.io/SeniorDesignBlog/Beginning-with-PGP-Encryption)
 6. [Common Vulnerabilities and Exposures](https://marcin-wski.github.io/SeniorDesignBlog/Common-Vulnerabilities-and-Exposures)
+7. [Why is DNS Important](https://marcin-wski.github.io/SeniorDesignBlog/Why-is-DNS-Important)
