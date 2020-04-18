@@ -10,4 +10,4 @@
 7. [Why is DNS Important](https://marcin-wski.github.io/SeniorDesignBlog/Why-is-DNS-Important)
 8. [What Is Wi-Fi Protected Access](https://marcin-wski.github.io/SeniorDesignBlog/What-Is-Wi-Fi-Protected-Access)
 9. (missing)
-10. [LDAP Overview](https://marcin-wski.github.io/LDAP-Overview)
+10. [LDAP Overview](https://marcin-wski.github.io/SeniorDesignBlog/LDAP-Overview)
