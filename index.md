@@ -12,3 +12,4 @@
 9. (missing)
 10. [LDAP Overview](https://marcin-wski.github.io/SeniorDesignBlog/LDAP-Overview)
 11. [Zoom and its Vulnerability](https://marcin-wski.github.io/SeniorDesignBlog/Zoom-and-its-Vulnerability)
+12. [Red Hat Enterprise Linux Identity Management](https://marcin-wski.github.io/SeniorDesignBlog/Red-Hat-Enterprise-Linux-Identity-Management.md)
