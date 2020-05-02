@@ -20,3 +20,7 @@ LDAP directories have flexibility and adaptability which makes them a perfect ba
 
 When an infrastructure has previously deployed an LDAP server for authentication and identity lookups, it is possible to migrate the user data, including passwords, to a new Identity Management instance, without losing user or password data.
 Identity Management even has specific migration tools to help move directory data and streamline the whole process for the administrators.
+
+# Is IdM only on Red Hat Enterprise Linux
+
+Red Hat official documentation specifies that an IdM server is only supported on an RHEL system (currently on version 8) and that the Red Hat server is registered with the Red Hat Subscription Manager (RHSM). Fedora and CentOS work seamlessly with FreeIPA which is a free and open source identity management system, and also the upstream open-source project for RHEL IdM. As such it will work fine with Red Hat servers, but will run on other Linux distributions that do not depend on RHSM. The current version is 4.8.6, released on 03/28/2020. FreeIPA is used by both [Fedora](https://docs.fedoraproject.org/en-US/Fedora/18/html/FreeIPA_Guide/index.html) and [CentOS](https://www.unixmen.com/configure-freeipa-server-centos-7/)
